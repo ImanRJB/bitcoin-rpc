@@ -14,8 +14,8 @@ class BitcoinRpcService
         $this->bitcoin = new Bitcoin();
     }
 
-    public function getnewaddress($address_type = 'p2sh-segwit')
+    public function getnewaddress($label = '', $address_type = 'p2sh-segwit')
     {
-        return $this->bitcoin->getnewaddress();
+        return $this->bitcoin->getnewaddress($label, $address_type);
     }
 }
