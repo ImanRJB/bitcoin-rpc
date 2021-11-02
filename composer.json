@@ -1,0 +1,28 @@
+{
+    "name": "imanrjb/bitcoin-rpc",
+    "description": "",
+    "keywords": [],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+
+    },
+    "authors": [
+        {
+            "name": "Iman Rajabi",
+            "email": "iman.rjb@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ImanRjb\\BitcoinRpc\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ImanRjb\\BitcoinRpc\\BitcoinRpcServiceProvider"
+            ]
+        }
+    }
+}
