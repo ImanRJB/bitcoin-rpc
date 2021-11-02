@@ -1,6 +1,6 @@
 <?php
 
-namespace ImanRjb\BitcoinRpc\Services\ModelRepository;
+namespace ImanRjb\BitcoinRpc\Services\BitcoinRpc;
 
 use Illuminate\Support\Facades\Facade;
 
