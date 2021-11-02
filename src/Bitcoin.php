@@ -143,7 +143,7 @@ class Bitcoin
         }
 
         if ($this->error) {
-            return false;
+            return $this->response['error'];
         }
 
         return $this->response['result'];
