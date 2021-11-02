@@ -29,13 +29,13 @@ class Bitcoin
      * @param string $proto
      * @param string $url
      */
-    public function __construct($username, $password, $host = 'localhost', $port = 8332, $url = null)
+    public function __construct()
     {
-        $this->username      = $username;
-        $this->password      = $password;
-        $this->host          = $host;
-        $this->port          = $port;
-        $this->url           = $url;
+        $this->username      = config('bitcoin.default.user');
+        $this->password      = config('bitcoin.default.password');
+        $this->host          = config('bitcoin.default.host');
+        $this->port          = config('bitcoin.default.port');
+        $this->url           = null;
 
         // Set some defaults
         $this->proto         = 'http';
